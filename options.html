@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Multimodal Video Controller: Options</title>
+		<link rel="stylesheet" href="options.css" />
+		<script src="options.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>Multimodal Video Controller</h1>
+		</header>
+
+    <section>
+      <h3>Shortcuts</h3>
+
+
+      <div class="row">
+          <label for="toggleKeyInput">Toggle</label>
+          <input id="toggleKeyInput" placeholder="press a key" type="text" value=""/>
+      </div>
+      <div class="row">
+          <label for="debugKeyInput">Debug</label>
+          <input id="debugKeyInput" placeholder="press a key" type="text" value=""/>
+      </div>
+    </section>
+
+    <section>
+			<h3>Other</h3>
+  		<div class="row">
+          <label for="skipTime">Skip Time (s)</label>
+          <input id="skipTime" type="text" value=""/>
+      </div>
+
+      <div class="row">
+          <label for="blacklist">Blacklisted sites on which extension is disabled<br/>(one per line)</label>
+          <textarea id="blacklist" rows="10" cols="50"></textarea>
+      </div>
+    </section>
+
+    <button id="save">Save</button>
+		<button id="restore">Restore Defaults</button>
+
+    <div id="status"></div>
+  </body>
+</html>
